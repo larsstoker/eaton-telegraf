@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  telegraf:
+    build: .
+    volumes:
+      - /path/to/telegraf.conf:/etc/telegraf/telegraf.conf
+  db:
+    image: influxdb:1.8
+    ports:
+      - 8086:8086
+    environment:
+      INFLUXDB_ADMIN_USER: telegraf
+      INFLUXDB_ADMIN_PASSWORD: telegraf
+    volumes:
+      - db:/var/lib/influxdb
+volumes:
+  db:
