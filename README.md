@@ -1,5 +1,5 @@
 # eaton-telegraf
-Telegraf container to read stats from Eaton 5PX UPS'.   
+Telegraf container to read stats from Eaton 5PX UPS' using SNMP.  
 Does **not** include Grafana.  
 
 ### Usage
