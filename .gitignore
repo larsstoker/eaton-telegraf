@@ -2,3 +2,4 @@ playground/*
 oids.txt
 out.txt
 createInputPlugin.ps1
+docker-compose-test.yml
