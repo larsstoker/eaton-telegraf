@@ -11,3 +11,6 @@ or when using docker Swarm
 ```bash
 Docker stack deploy --compose-file docker-compose.yml
 ```
+
+### Grafana Dashboard Example
+![](https://raw.githubusercontent.com/larsstoker/eaton-telegraf/master/images/exampleDashboard.png)
