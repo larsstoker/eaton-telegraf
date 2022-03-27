@@ -1,4 +1,4 @@
-FROM telegraf:1.20.2
+FROM telegraf:1.22.0
 
 RUN echo "deb http://deb.debian.org/debian buster main non-free" >> /etc/apt/sources.list
 
