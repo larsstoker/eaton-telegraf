@@ -13,4 +13,4 @@ steps:
         from_secret: docker_pwd
       repo: larsstoker/eaton-telegraf
       dockerfile: ./Dockerfile
-      tags: ["latest"]
+      tags: ["latest", "1.22.0"]
