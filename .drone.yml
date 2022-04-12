@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: docker  
+    image: plugins/docker
+    settings:
+      debug: true
+      username:
+        from_secret: docker_usr
+      password:
+        from_secret: docker_pwd
+      repo: larsstoker/eaton-telegraf
+      dockerfile: ./Dockerfile
+      tags: ["latest"]
